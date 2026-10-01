@@ -1,0 +1,6 @@
+# Tested together on Python 3.12 (pip check: no conflicts).
+# NOTE: mediapipe itself depends on opencv-contrib-python, so we use that
+# and do NOT install opencv-python (installing both causes conflicts).
+mediapipe==0.10.14
+opencv-contrib-python==4.10.0.84
+numpy==1.26.4

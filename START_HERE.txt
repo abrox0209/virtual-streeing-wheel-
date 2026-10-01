@@ -1,0 +1,32 @@
+VIRTUAL STEERING - START HERE
+=============================
+
+You need: Windows 10/11 (64-bit), Python 3.12 (64-bit), a webcam.
+(Get Python from https://www.python.org/downloads/ - tick "Add python.exe to PATH".)
+
+EASIEST WAY (no typing):
+  1. Extract the ZIP (right-click > Extract All).
+  2. Double-click  setup.bat   (only the first time; wait until it says "Setup is complete").
+  3. Double-click  run.bat     to start.
+
+WITH VS CODE (what you asked for):
+  1. Open the VirtualSteering folder in VS Code (File > Open Folder).
+  2. Open Terminal (Terminal > New Terminal).  If it is not PowerShell, choose PowerShell.
+  3. FIRST TIME ONLY, create the environment:   python -m venv venv
+     (or just double-click setup.bat which does everything)
+  4. Run:   venv\Scripts\activate
+     If PowerShell refuses, run this once and try again:
+     Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+  5. Run:   pip install -r requirements.txt
+  6. Run:   python main.py
+
+USING IT:
+  6. Hold BOTH hands in front of the camera, like holding a steering wheel.
+  7. Hold them straight (level).
+  8. Press C  (this sets "straight").
+  9. Open the game in your browser and CLICK on the game once (so it gets the keyboard).
+ 10. Drive: tilt your hands like turning a wheel. Right hand down = turn right.
+ 11. Press Q to quit.  (Q, C and K work even while the game window is in front.)
+
+IMPORTANT: Press K to pause/resume sending keys. Pause it while you are typing elsewhere.
+If the game does not react, read README.md (section "Changing the keys").
